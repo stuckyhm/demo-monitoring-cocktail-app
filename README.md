@@ -1,6 +1,8 @@
 
 # Demo-Projekt Monitoring - CocktailApp
 
+![Diagram](/docs/diagram.png)
+
 ## Starten
 ```
 git clone git@github.com:stuckyhm/demo-monitoring-cocktail-app.git
