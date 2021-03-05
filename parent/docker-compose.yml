@@ -8,11 +8,6 @@ services:
         - "9000"
         ports:
         - "9000:9000"
-        labels:
-            prometheus-scrape.enabled: "true"
-            prometheus-scrape.port: 9000
-            prometheus-scrape.job_name: "demo-monitoring-app"
-            prometheus-scrape.metrics_path: "/actuator/prometheus"
         networks:
             - internal
             - monitoring_ext
@@ -24,11 +19,6 @@ services:
         - "9001"
         ports:
         - "9001:9001"
-        labels:
-            prometheus-scrape.enabled: "true"
-            prometheus-scrape.port: 9001
-            prometheus-scrape.job_name: "demo-monitoring-auth"
-            prometheus-scrape.metrics_path: "/actuator/prometheus"
         networks:
             - internal
             - monitoring_ext
@@ -40,11 +30,6 @@ services:
         - "9002"
         ports:
         - "9002:9002"
-        labels:
-            prometheus-scrape.enabled: "true"
-            prometheus-scrape.port: 9002
-            prometheus-scrape.job_name: "demo-monitoring-billing"
-            prometheus-scrape.metrics_path: "/actuator/prometheus"
         networks:
             - internal
             - monitoring_ext
@@ -56,11 +41,6 @@ services:
         - "9003"
         ports:
         - "9003:9003"
-        labels:
-            prometheus-scrape.enabled: "true"
-            prometheus-scrape.port: 9003
-            prometheus-scrape.job_name: "demo-monitoring-content"
-            prometheus-scrape.metrics_path: "/actuator/prometheus"
         networks:
             - internal
             - monitoring_ext
